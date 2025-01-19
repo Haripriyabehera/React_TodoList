@@ -31,7 +31,7 @@ export default function TodoWrapper() {
     
     return (
         <div className="TodoWrapper">
-            <h1>TodoWrapper</h1>
+            <h1>Todo List</h1>
             <TodoForm handleAdd={handleAdd}/>
             {todos.map((todo) =>  todo.isEditing ? (<EditTodoForm handleEdit={editTask} todo={todo} key={todo.id}/>) : (<Todo
                 key={todo.id}
